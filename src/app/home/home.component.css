@@ -1,5 +1,11 @@
 .bg-img {
-  background-image: url("../../assets/bg/Rectangle-30.png");
+  
+  
+  background-image: url("../../assets/bg//universe.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  
 }
 
 .l-spacing-4{
