@@ -3,16 +3,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+@import url("https://cdn-uicons.flaticon.com/2.5.1/uicons-regular-straight/css/uicons-regular-straight.css");
 .forum {
   font-family: "Forum", serif;
-  font-weight: 500;
+  font-weight: 400;
   font-style: normal;
 }
 
 .mulish {
   font-family: "Mulish", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 500;
+  font-weight: 400;
   font-style: normal;
 }

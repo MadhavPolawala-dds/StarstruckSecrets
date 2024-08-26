@@ -1,0 +1,64 @@
+{
+  "horoscope": [
+    {
+      "id": 1,
+      "name": "Aries",
+      "image": "assets/logo/aries.png"
+    },
+    {
+      "id": 2,
+      "name": "Taurus",
+      "image": "assets/logo/taurus.png"
+    },
+    {
+      "id": 3,
+      "name": "Gemini",
+      "image": "assets/logo/gemini.png"
+    },
+    {
+      "id": 4,
+      "name": "Cancer",
+      "image": "assets/logo/cancer.png"
+    },
+    {
+      "id": 5,
+      "name": "Leo",
+      "image": "assets/logo/leo.png"
+    },
+    {
+      "id": 6,
+      "name": "Virgo",
+      "image": "assets/logo/virgo.png"
+    },
+    {
+      "id": 7,
+      "name": "Libra",
+      "image": "assets/logo/libra.png"
+    },
+    {
+      "id": 8,
+      "name": "Scorpio",
+      "image": "assets/logo/scorpio.png"
+    },
+    {
+      "id": 9,
+      "name": "Sagittarius",
+      "image": "assets/logo/sagitarius.png"
+    },
+    {
+      "id": 10,
+      "name": "Capricorn",
+      "image": "assets/logo/capricornus.png"
+    },
+    {
+      "id": 11,
+      "name": "Aquarius",
+      "image": "assets/logo/aquarius.png"
+    },
+    {
+      "id": 12,
+      "name": "Pisces",
+      "image": "assets/logo/pisces.png"
+    }
+  ]
+}
