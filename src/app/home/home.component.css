@@ -1,13 +1,12 @@
-.bg-img {
-  
-  
+.bg-img-d {
   background-image: url("../../assets/bg//universe.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  
 }
 
-.l-spacing-4{
-    letter-spacing: 4px;
+
+.l-spacing-4 {
+  letter-spacing: 4px;
 }
+
