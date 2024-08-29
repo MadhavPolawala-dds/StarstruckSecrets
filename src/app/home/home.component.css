@@ -4,9 +4,25 @@
   background-image: radial-gradient(
     circle,
     rgba(0, 0, 0, 0) 0%,
-    rgb(0, 0, 0) 65%,
+    rgb(0, 0, 0) 55%,
     black 100%
   );
+}
+
+@media screen and (max-width: 768px) {
+  .radial-gradient-black {
+    background-image: radial-gradient(
+      circle,
+      rgba(0, 0, 0, 0) 0%,
+      rgb(0, 0, 0) 23%,
+      black 100%
+    );
+  }
+  .rotating-star::before{
+    transform: rotate(90deg);
+    animation: none;
+  }
+  
 }
 
 .l-spacing-4 {
@@ -32,6 +48,8 @@
   top: 0;
   left: 0;
   width: 100%;
+  display: flex;
+  justify-content: center;
   height: 100%;
   background-image: url("../../assets/bg/universe.png");
 
@@ -40,6 +58,7 @@
   z-index: -1;
   animation: rotateBackground 20s linear infinite;
 }
+
 .rotating-star::before {
   content: "";
   position: absolute;
@@ -62,6 +81,14 @@
     transform: rotate(360deg);
   }
 }
+@keyframes rotateBackground-r {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
 
 .flip {
   transition: 0.5s;
@@ -70,3 +97,90 @@
 .flip:hover {
   transform: rotateY(180deg);
 }
+
+.rotating-layer-1 {
+  position: relative;
+  max-width: 354px;
+  max-height: 354px; /* Adjust height as needed */
+  overflow: hidden; /* Ensure the rotating background doesn't overflow */
+}
+.rotating-layer-1::before {
+  content: "";
+  position: absolute;
+
+  width: 63%;
+  height: 63%;
+  background-image: url("../../assets/images/r1.png");
+
+  background-size: cover;
+  background-position: center;
+  animation: rotateBackground 20s linear infinite;
+}
+
+.rotating-layer-2 {
+  position: relative;
+  max-width: 391px;
+  height: 391px; /* Adjust height as needed */
+  overflow: hidden; /* Ensure the rotating background doesn't overflow */
+}
+.rotating-layer-2::before {
+  content: "";
+  position: absolute;
+
+  width: 97%;
+  height: 97%;
+  background-image: url("../../assets/images/r2.png");
+
+  background-size: cover;
+  background-position: center;
+  animation: rotateBackground-r 20s linear infinite;
+}
+
+.rotating-layer-3 {
+  position: relative;
+  max-width: 431px;
+  height: 431px; /* Adjust height as needed */
+  overflow: hidden; /* Ensure the rotating background doesn't overflow */
+}
+.rotating-layer-3::before {
+  content: "";
+  position: absolute;
+
+  width: 107%;
+  height: 107%;
+  background-image: url("../../assets/images/r2.png");
+
+  background-size: cover;
+  background-position: center;
+  animation: rotateBackground 20s linear infinite;
+}
+
+@media screen and (max-width: 768px) {
+  .rotating-layer-1 {
+    max-width: 274px;
+    max-height: 274px;
+  }
+  .rotating-layer-1::before {
+    width: 77%;
+    height: 77%;
+  }
+
+  .rotating-layer-2 {
+    max-width: 303px;
+    height: 303px;
+  }
+  .rotating-layer-2::before {
+    width: 120%;
+    height: 120%;
+  }
+
+  .rotating-layer-3 {
+    max-width: 333px;
+    height: 333px;
+  }
+  .rotating-layer-3::before {
+    width: 133%;
+    height: 133%;
+  }
+}
+
