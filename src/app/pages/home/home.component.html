@@ -2,56 +2,8 @@
   class="rotating-background radial-gradient-black flex flex-col justify-center"
 >
   <div class="flex justify-center rotating-star">
-    <div class="lg:w-[1440px] lg:min-h-[800px]">
-      <nav class="w-full lg:justify-evenly lg:p-8 lg:flex">
-        <div class="flex items-center">
-          <ul class="w-full lg:flex hidden lg:gap-4">
-            <li
-              class="flex cursor-pointer mulish text-[14px] text-[#EEEBE6] items-center"
-            >
-              HOROSCOPE<i class="fi fi-rs-angle-down pl-1 pt-1"></i>
-            </li>
-            <li
-              class="flex cursor-pointer mulish text-[14px] text-[#EEEBE6] items-center"
-            >
-              TAROT<i class="fi fi-rs-angle-down pl-1 pt-1"></i>
-            </li>
-            <li
-              class="flex cursor-pointer mulish text-[14px] text-[#EEEBE6] items-center"
-            >
-              COFFEE CUP
-            </li>
-          </ul>
-        </div>
-        <div class="flex justify-between w-full lg:w-[216px] lg:p-0 p-8">
-          <div></div>
-          <img class="w-[216px]" src="../../assets/logo_white-2.png" alt="" />
-          <img
-            class="w-[32px] lg:hidden block"
-            src="../../assets/mobile/menu-m.png"
-            alt=""
-          />
-        </div>
-        <div class="flex items-center">
-          <ul class="w-full lg:flex lg:gap-4 hidden">
-            <li
-              class="flex cursor-pointer mulish text-[14px] text-[#EEEBE6] items-center"
-            >
-              LOVE COMPATIBILITY
-            </li>
-            <li
-              class="flex cursor-pointer mulish text-[14px] text-[#EEEBE6] items-center"
-            >
-              FORTUNE COOKIE
-            </li>
-            <li
-              class="flex cursor-pointer mulish text-[14px] text-[#EEEBE6] items-center"
-            >
-              BLOG
-            </li>
-          </ul>
-        </div>
-      </nav>
+    <div class="lg:w-[1440px] lg:min-h-[800px]  bg-universe-mobile">
+      <app-header></app-header>
 
       <div
         class="flex flex-col justify-center items-center m-10 pt-8 lg:max-w-[936px] mx-auto"
@@ -193,28 +145,28 @@
       <div class="lg:col-span-3 col-span-6 flex justify-center">
         <img
           class="lg:max-h-[384px] max-h-[288px] flip hover:cursor-pointer"
-          src="../../assets/images/tarot.png"
+          src="assets/images/tarot.png"
           alt=""
         />
       </div>
       <div class="lg:col-span-3 col-span-6 flex justify-center">
         <img
           class="lg:max-h-[384px] max-h-[288px] flip hover:cursor-pointer"
-          src="../../assets/images/tarot.png"
+          src="assets/images/tarot.png"
           alt=""
         />
       </div>
       <div class="lg:col-span-3 col-span-6 flex justify-center">
         <img
           class="lg:max-h-[384px] max-h-[288px] flip hover:cursor-pointer"
-          src="../../assets/images/tarot.png"
+          src="assets/images/tarot.png"
           alt=""
         />
       </div>
       <div class="lg:col-span-3 col-span-6 flex justify-center">
         <img
           class="lg:max-h-[384px] max-h-[288px] flip hover:cursor-pointer"
-          src="../../assets/images/tarot-2.png"
+          src="assets/images/tarot-2.png"
           alt=""
         />
       </div>
@@ -237,7 +189,7 @@
         Latest Articles
       </div>
       <div
-        class="leading-[32px] text-[#292929] max-w-xl md:text-[14px] text-[12px] mulish text-center"
+        class="leading-[32px] text-[#292929] max-w-xl md:text-[14px] px-2 text-[12px] mulish text-center"
       >
         Our articles serve as a beacon of knowledge, offering enlightening
         articles on a wide range of topics, from astrology and Tarot to
@@ -249,7 +201,7 @@
         class="flex md:col-span-4 col-span-12 md:mx-0 mx-8 flex-col mx-w md:max-w-[360px] h-auto shadow-2xl bg-[#FFFFFF]"
       >
         <div class="">
-          <img class="" src="../../assets/images/image5.png" alt="" />
+          <img class="" src="assets/images/image5.png" alt="" />
         </div>
         <div>
           <div class="flex flex-col gap-2 p-6">
@@ -278,7 +230,7 @@
         class="flex md:col-span-4 col-span-12 mx-8 md:mx-0 flex-col mx-w md:max-w-[360px] h-auto shadow-2xl bg-[#FFFFFF]"
       >
         <div>
-          <img class=" " src="../../assets/images/image6.png" alt="" />
+          <img class=" " src="assets/images/image6.png" alt="" />
         </div>
         <div>
           <div class="flex flex-col gap-2 p-6">
@@ -307,7 +259,7 @@
         class="flex md:col-span-4 col-span-12 mx-8 md:mx-0 flex-col mx-w md:max-w-[360px] h-auto shadow-2xl bg-[#FFFFFF]"
       >
         <div>
-          <img class=" " src="../../assets/images/image7.png" alt="" />
+          <img class=" " src="assets/images/image7.png" alt="" />
         </div>
         <div>
           <div class="flex flex-col gap-2 p-6">
@@ -350,7 +302,7 @@
     class="md:flex-row justify-center items-center flex flex-col-reverse gap-6"
   >
     <div
-      class="flex flex-col md:max-w-[600px] md:mx-0 mx-8 justify-center items-center"
+      class="flex flex-col md:max-w-[600px] md:mx-0 mx-8 justify-center items-center md:items-start"
     >
       <div
         class="uppercase md:text-[48px] text-[32px] md:leading-[72px] leading-10 text-[#EEEBE6] forum text-center md:text-start"
@@ -366,7 +318,7 @@
       </div>
       <div>
         <button
-          class="w-[258px] h-[58px] bg-[#EEEBE6] mulish-5 text-[14px] text-[#292929] border-[2px] hover:border-[#997E5C]"
+          class="max-w-[258px] h-[58px] bg-[#EEEBE6] mulish-5 text-[14px] text-[#292929] px-2 border-[2px] hover:border-[#997E5C]"
         >
           READ YOUR <span class="mulish-8">FREE HOROSCOPE</span>
         </button>
@@ -383,7 +335,7 @@
         >
           <img
             class="md:max-w-[315px] max-w-[244px] p-2"
-            src="../../assets/images/round.png"
+            src="assets/images/round.png"
             alt=""
           />
         </div>
@@ -396,135 +348,4 @@
 --------------------------- -------------------------FOOTER -------------------------------------------------------
 -------------------------------------------------------------------------------------------------------------------->
 
-<div class="flex justify-center bg-[#21212C] md:min-h-[600px] items-center">
-  <div class="flex flex-col md:w-[1440px] justify-center">
-    <div
-      class="flex md:flex-row flex-col-reverse items-center md:justify-center gap-16 md:px-36 py-16"
-    >
-      <div class="flex md:flex-row flex-col gap-16">
-        <div class="flex flex-col max-w-[330px] md:max-w-[414px] gap-6 ">
-          <div class="">
-            <img
-              class="w-[225px] md:w-[264px]"
-              src="../../assets/logo_white-2.png"
-              alt=""
-            />
-          </div>
-          <div class="mulish leading-6 text-[12px] text-[#EEEBE6]">
-            Navigate the stars with Starstruck Secrets, your celestial companion
-            for personalized insights. Discover your fate's secrets using
-            astrology, tarot, and more.
-          </div>
-          <div class="flex md:gap-4 gap-2">
-            <img
-              class="w-8 h-8"
-              src="../../assets/logo/instagram.png"
-              alt=""
-            /><img
-              class="w-8 h-8"
-              src="../../assets/logo/facebook.png"
-              alt=""
-            /><img class="w-8 h-8" src="../../assets/logo/youtube.png" alt="" />
-          </div>
-        </div>
-        <div class="flex gap-16 max-w-[330px]">
-          <div class="flex flex-col gap-6">
-            <div class="uppercase mulish-8 md:text-[16px] text-[14px] text-[#EEEBE6]">
-              Unveil Your Path
-            </div>
-            <div class="flex flex-col gap-4">
-              <p class="mulish uppercase md:text-[14px] text-[12px] text-[#EEEBE6]">
-                HOROSCOPES
-              </p>
-              <p class="mulish uppercase md:text-[14px] text-[12px] text-[#EEEBE6]">
-                daily tarot
-              </p>
-              <p class="mulish uppercase md:text-[14px] text-[12px] text-[#EEEBE6]">
-                yes or no tarot
-              </p>
-              <p class="mulish uppercase md:text-[14px] text-[12px] text-[#EEEBE6]">
-                COFFEE CUP READING
-              </p>
-              <p class="mulish uppercase md:text-[14px] text-[12px] text-[#EEEBE6]">
-                Fortune cookie
-              </p>
-              <p class="mulish uppercase md:text-[14px] text-[12px] text-[#EEEBE6]">
-                love compatibility
-              </p>
-            </div>
-          </div>
-          <div class="flex flex-col gap-6">
-            <div class="uppercase mulish-8 md:text-[16px] text-[14px] text-[#EEEBE6]">
-              LINKS
-            </div>
-            <div class="flex flex-col gap-4">
-              <p class="mulish uppercase md:text-[14px] text-[12px] text-[#EEEBE6]">contact</p>
-              <p class="mulish uppercase md:text-[14px] text-[12px] text-[#EEEBE6]">blog</p>
-              <p class="mulish uppercase md:text-[14px] text-[12px] text-[#EEEBE6]">
-                privacy policy
-              </p>
-              <p class="mulish uppercase md:text-[14px] text-[12px] text-[#EEEBE6]">
-                TERMS & CONDITIONS
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div
-        class="max-w-[330px] md:max-w-[414px] h-fit border border-[#997E5C4D] flex flex-col bg-[#997E5C08]"
-      >
-        <div
-          class="max-w-[330px] md:max-w-[414px] py-8 px-32 flex justify-center items-center"
-        >
-          <img
-            class="max-w-[148px] h-auto"
-            src="../../assets/logo/footer-hand.png"
-            alt=""
-          />
-        </div>
-        <div
-          class="flex justify-center items-center gap-3 py-3 border-t border-[#997E5C4D]"
-        >
-          <p class="uppercase forum text-[20px] text-[#997E5C]">
-            LOVE COMPATIBILITY
-          </p>
-          <span
-            ><img class="h-6" src="../../assets/images/vector.png" alt=""
-          /></span>
-        </div>
-      </div>
-    </div>
-    <div
-      class="flex flex-col md:flex-row items-center md:justify-between gap-6 py-11 md:py-6 md:px-36  border-y border-[#EEEBE633]"
-    >
-      <div class="max-w-[360px] flex flex-col gap-2 px-4">
-        <div class="uppercase forum text-[24px] text-[#EEEBE6]">
-          Subscribe to our newsletter
-        </div>
-        <div class="mulish text-[14px] leading-6 text-[#EEEBE6]">
-          The latest news, articles, and resources, sent to your inbox weekly.
-        </div>
-      </div>
-      <div class="flex h-[58px] items-center justify-between gap-4 px-4">
-        <div class="">
-          <input
-            class="maw-[185px] pl-6 text-[14px] mulish-5 md:w-[314px] border-[1px] text-[#eeebe683] bg-transparent border-[#eeebe638] h-[58px]"
-            type="email"
-            placeholder="EMAIL"
-          />
-        </div>
-        <div>
-          <button
-            class="hover:border-black border h-[58px] bg-[#EEEBE6] mulish-8 text-[14px] text-[#21212C] md:px-6 px-4"
-          >
-            SUBSCRIBE
-          </button>
-        </div>
-      </div>
-    </div>
-    <div class="text-[#EEEBE6] text-center text-[10px] py-[10px]">
-      Copyright © 2024 StarstruckSecrets. All rights reserved.
-      info&#64;starstrucksecrets.com
-    </div>
-  </div>
-</div>
+<app-footer></app-footer>
