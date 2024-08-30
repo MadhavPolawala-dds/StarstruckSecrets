@@ -2,7 +2,7 @@
   class="rotating-background radial-gradient-black flex flex-col justify-center"
 >
   <div class="flex justify-center rotating-star">
-    <div class="lg:w-[1440px] lg:min-h-[800px]  bg-universe-mobile">
+    <div class="lg:min-h-[800px] bg-universe-mobile">
       <app-header></app-header>
 
       <div
@@ -29,7 +29,7 @@
         </div>
         <div>
           <button
-            class="hover:border-black border w-[276px] h-[58px] bg-[#EEEBE6] mulish text-[14px] text-[#292929] lg:mt-20 mt-10"
+            class="hover:bg-[#eeebe6dc] border w-[276px] h-[58px] bg-[#EEEBE6] mulish text-[14px] text-[#292929] lg:mt-20 mt-10"
           >
             GET <span class="font-bold">FREE HOROSCOPE READING</span>
           </button>
@@ -61,7 +61,7 @@
         </div>
         <div>
           <button
-            class="hover:border-black border-2 w-[258px] h-[58px] bg-[#997E5C] mulish text-[14px] text-white mt-10"
+            class="hover:bg-[#8f7556] border-2 w-[258px] h-[58px] bg-[#997E5C] mulish text-[14px] text-white mt-10"
           >
             GET <span class="font-bold">FREE MOON READING</span>
           </button>
@@ -91,13 +91,15 @@
   <div class="max-w-[1440px] my-5">
     <div class="grid grid-cols-12">
       @for( item of horoscopes ; track item.id ){
-      <div class="lg:col-span-3 md:col-span-4 col-span-6 m-2 my-3">
+      <div
+        class="lg:col-span-3 md:col-span-4 col-span-6 m-2 my-3 hover:cursor-pointer"
+      >
         <div
           class="bg-[#997e5c0e] flex flex-col justify-center items-center p-3 md:p-10 border-[1px] border-[#997e5c56] w-full h-auto"
         >
-          <div>
+          <div class="flip">
             <img
-              class="md:h-[90px] h-[70px] w-auto flip hover:cursor-pointer"
+              class="md:h-[90px] h-[70px] w-auto hover:cursor-pointer"
               src="{{ item.image }}"
               alt=""
             />
@@ -142,23 +144,23 @@
       make informed decisions and navigate life's challenges with confidence.
     </div>
     <div class="grid grid-cols-12 lg:gap-6 gap-4 lg:mx-36 mx-8 mt-[50px]">
-      <div class="lg:col-span-3 col-span-6 flex justify-center">
+      <div class="lg:col-span-3 col-span-6 flex justify-center flip">
         <img
-          class="lg:max-h-[384px] max-h-[288px] flip hover:cursor-pointer"
+          class="lg:max-h-[384px] max-h-[288px] hover:cursor-pointer"
           src="assets/images/tarot.png"
           alt=""
         />
       </div>
-      <div class="lg:col-span-3 col-span-6 flex justify-center">
+      <div class="lg:col-span-3 col-span-6 flex justify-center flip">
         <img
-          class="lg:max-h-[384px] max-h-[288px] flip hover:cursor-pointer"
+          class="lg:max-h-[384px] max-h-[288px] hover:cursor-pointer"
           src="assets/images/tarot.png"
           alt=""
         />
       </div>
-      <div class="lg:col-span-3 col-span-6 flex justify-center">
+      <div class="lg:col-span-3 col-span-6 flex justify-center flip">
         <img
-          class="lg:max-h-[384px] max-h-[288px] flip hover:cursor-pointer"
+          class="lg:max-h-[384px] max-h-[288px] hover:cursor-pointer"
           src="assets/images/tarot.png"
           alt=""
         />
@@ -210,7 +212,7 @@
             </div>
             <div class="flex gap-4 items-center">
               <button
-                class="mulish-6 text-[#997E5C] border-[1px] border-[#997E5C] px-2"
+                class="mulish-6 hover:text-[#63513c] hover:border-[#63513c] text-[#997E5C] border-[1px] border-[#997E5C] px-2"
               >
                 HOROSCOPE
               </button>
@@ -239,7 +241,7 @@
             </div>
             <div class="flex gap-4 items-center">
               <button
-                class="mulish-6 text-[#997E5C] border-[1px] border-[#997E5C] px-2"
+                class="mulish-6 hover:text-[#63513c] hover:border-[#63513c] text-[#997E5C] border-[1px] border-[#997E5C] px-2"
               >
                 TAROT
               </button>
@@ -268,7 +270,7 @@
             </div>
             <div class="flex gap-4 items-center">
               <button
-                class="mulish-6 text-[#997E5C] border-[1px] border-[#997E5C] px-2"
+                class="mulish-6 hover:text-[#63513c] hover:border-[#63513c] text-[#997E5C] border-[1px] border-[#997E5C] px-2"
               >
                 TAROT
               </button>
@@ -285,7 +287,9 @@
         </div>
       </div>
     </div>
-    <div class="uppercase underline text-sm mulish-7 hover:cursor-pointer">
+    <div
+      class="uppercase  text-sm mulish-7 hover:cursor-pointer underline-hover-b"
+    >
       View more articles
     </div>
   </div>
@@ -318,7 +322,7 @@
       </div>
       <div>
         <button
-          class="max-w-[258px] h-[58px] bg-[#EEEBE6] mulish-5 text-[14px] text-[#292929] px-2 border-[2px] hover:border-[#997E5C]"
+          class="max-w-[258px] h-[58px] bg-[#EEEBE6] mulish-5 text-[14px] text-[#292929] px-2 border-[2px] hover:bg-[#e4e0d9]"
         >
           READ YOUR <span class="mulish-8">FREE HOROSCOPE</span>
         </button>

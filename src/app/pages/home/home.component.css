@@ -9,6 +9,7 @@
 
     black 100%
   );
+  z-index: 0;
 }
 
 @media screen and (min-width: 2280px) {
@@ -79,7 +80,7 @@
   background-image: url("../../../assets/bg/back-stars.png");
   background-size: cover;
   background-position: center;
-
+  z-index: -1;
   animation: rotateBackground 25s linear infinite;
 }
 
@@ -175,10 +176,6 @@
   z-index: 1;
 }
 
-.horo-card {
-  z-index: 2;
-}
-
 @media screen and (max-width: 768px) {
   .rotating-layer-1 {
     max-width: 274px;
@@ -233,4 +230,23 @@
     background-position: center;
     background-size: cover;
   }
+}
+
+
+.underline-hover-b {
+    display: inline-block;
+    position: relative;
+}
+
+.underline-hover-b::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 1px;
+    background: black;
+    transition: width 0.3s ease-in-out;
+}
+
+.underline-hover-b:hover::after {
+    width: 100%;
 }

@@ -1,0 +1,9 @@
+.scroll-thumb::-webkit-scrollbar {
+  display: none;
+}
+
+.scroll-thumb {
+  overflow-x: auto; /* Ensure horizontal scrolling is enabled */
+  white-space: nowrap; /* Prevent wrapping of content */
+  scroll-behavior: smooth;
+}
