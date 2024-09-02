@@ -1,13 +1,18 @@
-<div class="bg-[#151719] flex justify-center w-full">
-  <div class="flex flex-col justify-center items-center max-w-[1440px] w-full">
+<div class="bg-[#151719] flex justify-center w-full overflow-hidden">
+  <div
+    class="flex flex-col justify-center items-center md:max-w-[1440px] w-full"
+  >
     <app-header></app-header>
     <div
       class="max-w-[1440px] w-full h-auto border-y-[1px] border-y-[#EEEBE633] flex flex-col items-center"
     >
       <div
-        class="border-x-[1px] min-h-40 w-[1127px] border-x-[#EEEBE633] h-full flex justify-between"
+        class="border-x-[1px] min-h-40 md:w-[1127px] sm:w-[750px] w-[330px] border-x-[#EEEBE633] h-full flex justify-between"
       >
-        <button (click)="scrollLeft()">
+        <button
+          (click)="scrollLeft()"
+          class="ripple-button hover:bg-[#ffffff0e] md:block hidden"
+        >
           <div
             class="flex h-full justify-center items-center px-5 border-r-[1px] border-r-[#EEEBE633]"
           >
@@ -16,7 +21,7 @@
         </button>
         <div
           #scrollContainer
-          class="px-5 overflow-y-auto scroll-thumb max-w-[985px] flex items-center"
+          class="px-5 overflow-y-auto scroll-thumb md:max-w-[985px] sm:max-w-md max-w-fit flex items-center"
         >
           <div class="flex flex-row">
             @for( item of horoscopes ; track item.id ){
@@ -28,11 +33,11 @@
               class="lg:col-span-3 md:col-span-4 col-span-6 m-2 my-3 hover:cursor-pointer"
             >
               <div
-                class="bg-[#997e5c0e] horo flex flex-col justify-center items-center p-3 md:p-4 border-[1px] border-[#997e5c56] h-auto w-[168px]"
+                class="bg-[#997e5c0e] horo flex flex-col justify-center items-center p-3 md:p-4 border-[1px] border-[#997e5c56] h-auto md:w-[168px] w-[194px]"
               >
-                <div>
+                <div class="horo-class">
                   <img
-                    class="md:h-[58px] h-[67px] w-auto flip hover:cursor-pointer"
+                    class="md:h-[58px] h-[67px] w-auto hover:cursor-pointer flip"
                     src="{{ item.image }}"
                     alt=""
                   />
@@ -48,7 +53,10 @@
             }
           </div>
         </div>
-        <button (click)="scrollRight()">
+        <button
+          (click)="scrollRight()"
+          class="ripple-button hover:bg-[#ffffff0e] md:block hidden"
+        >
           <div
             class="flex h-full justify-center items-center px-5 border-l-[1px] border-l-[#EEEBE633]"
           >
@@ -61,16 +69,16 @@
 ------------------------------------------------ Type bar ---------------------------------------------------
 -------------------------------------------------------------------------------------------------------------------->
 
-      <div class="max-w-[1440px]">
+      <div class="md:max-w-[1440px] sm:max-w-[750px] max-w-[330px]">
         <div
-          class="w-[1127px] grid grid-cols-12 border-y-[1px] border-y-[#EEEBE633]"
+          class="md:w-[1127px] sm:w-[750px] w-[330px] md:grid md:grid-cols-12 md:border-y-[1px] md:border-y-[#EEEBE633] border-t-[1px] border-t-[#EEEBE633] md:border-x-[0px] border-x-[1px] border-x-[#EEEBE633] flex overflow-x-auto white btn-parent"
         >
           <button
-            class="flex gap-1 col-span-2 justify-center items-center py-4 border-l-[1px] border-l-[#EEEBE633] hover:bg-[#997E5C1A]"
+            class="flex gap-1 md:col-span-2 justify-center items-center py-4 md:border-l-[1px] border-l-[#EEEBE633] hover:bg-[#997E5C1A] ripple-button px-5 btn-w"
           >
             <span
               ><img
-                class="h-6 w-6"
+                class="h-6 min-w-6"
                 src="../../../assets/logo/Command.png"
                 alt="" /></span
             ><span class="forum text-[16px] text-[#997E5C] uppercase"
@@ -78,11 +86,11 @@
             >
           </button>
           <button
-            class="flex gap-1 col-span-2 justify-center items-center py-4 border-l-[1px] border-l-[#EEEBE633] hover:bg-[#997E5C1A]"
+            class="ripple-button flex gap-1 md:col-span-2 justify-center items-center py-4 border-l-[1px] border-l-[#EEEBE633] hover:bg-[#997E5C1A] px-5 btn-w"
           >
             <span
               ><img
-                class="h-6 w-6"
+                class="h-6 min-w-6"
                 src="../../../assets/logo/FirstAid.png"
                 alt="" /></span
             ><span class="forum text-[16px] text-[#997E5C] uppercase"
@@ -90,11 +98,11 @@
             >
           </button>
           <button
-            class="flex gap-1 col-span-2 justify-center items-center py-4 border-l-[1px] border-l-[#EEEBE633] hover:bg-[#997E5C1A]"
+            class="ripple-button flex gap-1 md:col-span-2 justify-center items-center py-4 border-l-[1px] border-l-[#EEEBE633] hover:bg-[#997E5C1A] px-5 btn-w"
           >
             <span
               ><img
-                class="h-6 w-6"
+                class="h-6 min-w-6"
                 src="../../../assets/logo/Briefcase.png"
                 alt="" /></span
             ><span class="forum text-[16px] text-[#997E5C] uppercase"
@@ -102,11 +110,11 @@
             >
           </button>
           <button
-            class="flex gap-1 col-span-2 justify-center items-center py-4 border-l-[1px] border-l-[#EEEBE633] hover:bg-[#997E5C1A]"
+            class="ripple-button flex gap-1 md:col-span-2 justify-center items-center py-4 border-l-[1px] border-l-[#EEEBE633] hover:bg-[#997E5C1A] px-5 btn-w"
           >
             <span
               ><img
-                class="h-6 w-6"
+                class="h-6 min-w-6"
                 src="../../../assets/logo/Smiley.png"
                 alt="" /></span
             ><span class="forum text-[16px] text-[#997E5C] uppercase"
@@ -114,11 +122,11 @@
             >
           </button>
           <button
-            class="flex gap-1 col-span-2 justify-center items-center py-4 border-l-[1px] border-l-[#EEEBE633] hover:bg-[#997E5C1A]"
+            class="ripple-button flex gap-1 md:col-span-2 justify-center items-center py-4 border-l-[1px] border-l-[#EEEBE633] hover:bg-[#997E5C1A] px-5 btn-w"
           >
             <span
               ><img
-                class="h-6 w-6"
+                class="h-6 min-w-6"
                 src="../../../assets/logo/AirplaneTilt.png"
                 alt="" /></span
             ><span class="forum text-[16px] text-[#997E5C] uppercase"
@@ -126,11 +134,11 @@
             >
           </button>
           <button
-            class="flex gap-1 col-span-2 justify-center items-center py-4 border-l-[1px] border-l-[#EEEBE633] border-r-[1px] border-r-[#EEEBE633] hover:bg-[#997E5C1A]"
+            class="ripple-button flex gap-1 md:col-span-2 justify-center items-center py-4 border-l-[1px] border-l-[#EEEBE633] md:border-r-[1px] border-r-[#EEEBE633] hover:bg-[#997E5C1A] px-5 btn-w"
           >
             <span
               ><img
-                class="h-6 w-6"
+                class="h-6 min-w-6"
                 src="../../../assets/logo/Pentagram.png"
                 alt="" /></span
             ><span class="forum text-[16px] text-[#997E5C] uppercase"
@@ -143,48 +151,50 @@
       <!---------------------------------------------------------------------------------------------------------------
 ------------------------------------------------ Duration  bar ---------------------------------------------------
 -------------------------------------------------------------------------------------------------------------------->
-
-      <div class="max-w-[1440px]">
+      <!---------------------------------------------------------------------------------------------------------------
+------------------------------------------------ Duration  bar Desktop ---------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------->
+      <div class="max-w-[1440px] md:block hidden">
         <div
           class="w-[1127px] grid grid-cols-12 gap-6 border-b-[1px] border-b-[#EEEBE633]"
         >
           <button
-            class="col-span-2 py-3 border-x-[1px] border-x-[#EEEBE633] hover:bg-[#EEEBE60D]"
+            class="ripple-button col-span-2 py-3 border-x-[1px] border-x-[#EEEBE633] hover:bg-[#EEEBE60D]"
           >
             <span class="uppercase forum text-[16px] text-[#EEEBE6]"
               >Yesterday</span
             >
           </button>
           <button
-            class="col-span-2 py-3 border-x-[1px] border-x-[#EEEBE633] hover:bg-[#EEEBE60D]"
+            class="ripple-button col-span-2 py-3 border-x-[1px] border-x-[#EEEBE633] hover:bg-[#EEEBE60D]"
           >
             <span class="uppercase forum text-[16px] text-[#EEEBE6]"
               >today</span
             >
           </button>
           <button
-            class="col-span-2 py-3 border-x-[1px] border-x-[#EEEBE633] hover:bg-[#EEEBE60D]"
+            class="ripple-button col-span-2 py-3 border-x-[1px] border-x-[#EEEBE633] hover:bg-[#EEEBE60D]"
           >
             <span class="uppercase forum text-[16px] text-[#EEEBE6]"
               >tomorrow</span
             >
           </button>
           <button
-            class="col-span-2 py-3 border-x-[1px] border-x-[#EEEBE633] hover:bg-[#EEEBE60D]"
+            class="ripple-button col-span-2 py-3 border-x-[1px] border-x-[#EEEBE633] hover:bg-[#EEEBE60D]"
           >
             <span class="uppercase forum text-[16px] text-[#EEEBE6]"
               >weekly</span
             >
           </button>
           <button
-            class="col-span-2 py-3 border-x-[1px] border-x-[#EEEBE633] hover:bg-[#EEEBE60D]"
+            class="ripple-button col-span-2 py-3 border-x-[1px] border-x-[#EEEBE633] hover:bg-[#EEEBE60D]"
           >
             <span class="uppercase forum text-[16px] text-[#EEEBE6]"
               >monthly</span
             >
           </button>
           <button
-            class="col-span-2 py-3 border-x-[1px] border-x-[#EEEBE633] hover:bg-[#EEEBE60D]"
+            class="ripple-button col-span-2 py-3 border-x-[1px] border-x-[#EEEBE633] hover:bg-[#EEEBE60D]"
           >
             <span class="uppercase forum text-[16px] text-[#EEEBE6]"
               >yearly</span
@@ -194,11 +204,61 @@
       </div>
 
       <!---------------------------------------------------------------------------------------------------------------
+------------------------------------------------ Duration  mobile ---------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------->
+      <div
+        class="md:hidden flex justify-center w-full md:border-b-[1px] md:border-b-[#EEEBE633] border-y-[1px] border-y-[#EEEBE633]"
+      >
+        <div class="w-full max-w-80">
+          <div class="w-full">
+            <select
+              class="w-full my-4 uppercase ripple-button py-3 border-[1px] border-[#EEEBE633] cursor-pointer select-none forum text-[16px] text-[#EEEBE6] flex justify-between px-5 bg-[#151719] hover:bg-[#1f2225]"
+              name="duration"
+              id="duration"
+            >
+              <option
+                class="bg-[#151719] py-3 ripple-button uppercase border-[1px] border-[#EEEBE633] hover:bg-[#EEEBE60D] cursor-pointer select-none forum text-[16px] text-[#EEEBE6] flex justify-between px-5"
+              >
+                Yesterday
+              </option>
+              <option
+                class="py-3 ripple-button uppercase border-[1px] border-[#EEEBE633] hover:bg-[#EEEBE60D] cursor-pointer select-none forum text-[16px] text-[#EEEBE6] flex justify-between px-5"
+              >
+                Today
+              </option>
+              <option
+                class="py-3 ripple-button uppercase border-[1px] border-[#EEEBE633] hover:bg-[#EEEBE60D] cursor-pointer select-none forum text-[16px] text-[#EEEBE6] flex justify-between px-5"
+              >
+                Tomorrow
+              </option>
+              <option
+                class="py-3 ripple-button uppercase border-[1px] border-[#EEEBE633] hover:bg-[#EEEBE60D] cursor-pointer select-none forum text-[16px] text-[#EEEBE6] flex justify-between px-5"
+              >
+                Weekly
+              </option>
+              <option
+                class="uppercase ripple-button py-3 border-[1px] border-[#EEEBE633] hover:bg-[#EEEBE60D] cursor-pointer select-none forum text-[16px] text-[#EEEBE6] flex justify-between px-5"
+              >
+                Monthly
+              </option>
+              <option
+                class="uppercase ripple-button py-3 border-[1px] border-[#EEEBE633] hover:bg-[#EEEBE60D] cursor-pointer select-none forum text-[16px] text-[#EEEBE6] flex justify-between px-5"
+              >
+                yearly
+              </option>
+              <div></div>
+            </select>
+          </div>
+        </div>
+      </div>
+      <!---------------------------------------------------------------------------------------------------------------
 ------------------------------------------------     Text bar ---------------------------------------------------
 -------------------------------------------------------------------------------------------------------------------->
-      <div class="max-w-[1440px]">
+      <div
+        class="lg:max-w-[1440px] md:max-w-[750px] sm:max-w-[413px] max-w-[330px]"
+      >
         <div
-          class="w-[1127px] h-auto px-12 py-9 border-x-[1px] border-x-[#EEEBE633] mulish leading-8 text-[14px] text-[#EEEBE6]"
+          class="lg:w-[1127px] h-auto px-12 py-9 border-x-[1px] border-x-[#EEEBE633] mulish leading-8 text-[14px] text-[#EEEBE6]"
         >
           The Moon's position and aspects today may stir up some intense
           emotions in personal relationships. You might experience a mix of
@@ -210,20 +270,33 @@
       </div>
     </div>
     <div class="flex justify-center py-16">
-      <div class="flex flex-col justify-center items-center">
-        <div class="flex flex-col gap-5 max-w-[524px]">
-          <div class="uppercase forum text-[32px] text-[#EEEBE6] text-center">
+      <div class="flex flex-col justify-center items-center gap-9">
+        <div
+          class="flex flex-col gap-5 md:max-w-[524px] sm:max-w-[413px] max-w-[330px]"
+        >
+          <div
+            class="uppercase forum text-[32px] text-[#EEEBE6] text-center px-2"
+          >
             More from starstruck secrets
           </div>
-          <div class="text-[#EEEBE6] mulish text-[12px] leading-8 text-center">
+          <div
+            class="text-[#EEEBE6] mulish text-[12px] px-2 leading-8 text-center"
+          >
             Discover the realms of astrology, zodiac signs, retrogrades, and
             more! Gain clarity on your world by understanding the universe's
             influence on it.
           </div>
         </div>
-        <div class="grid grid-cols-12 gap-6 w-[1128px]">
-          <div class="col-span-6 flex flex-col">
-            <div class="flex justify-between items-center">
+
+        <!---------------------------------------------------------------------------------------------------------------
+---------------------------------------------  Latest Post and other features  --------------------------------------
+-------------------------------------------------------------------------------------------------------------------->
+
+        <div
+          class="md:grid flex flex-col md:grid-cols-12 gap-6 md:w-[1128px] sm:w-[413px] w-[340px] px-2"
+        >
+          <div class="md:col-span-6 flex flex-col gap-6">
+            <div class="flex justify-between items-center pb-2">
               <div class="uppercase forum text-[24px] text-[#EEEBE6]">
                 Latest Posts
               </div>
@@ -231,18 +304,177 @@
                 See all
               </div>
             </div>
-            <div></div>
-            <div></div>
+            <div
+              class="flex flex-row bg-[#EEEBE608] justify-between items-center"
+            >
+              <div class="">
+                <img
+                  class="md:w-[190px] sm:w-[111px] w-[90px]"
+                  src="assets/images/lp-1.png"
+                  alt=""
+                />
+              </div>
+              <div class="md:max-w-[360px] w-auto md:mx-0 mx-2">
+                <div
+                  class="flex flex-col gap-2 md:p-6 sm:p-4 p-2 md:w-[360px] sm:w-[270px] w-[220px]"
+                >
+                  <div
+                    class="uppercase forum md:text-xl text-[16px] truncate text-[#EEEBE6]"
+                  >
+                    Discover the Secrets of 11th House Astrology
+                  </div>
+                  <div class="flex gap-4 items-center">
+                    <button
+                      class="mulish-6 hover:text-[#bd9b72] hover:border-[#bd9b72] text-[#997E5C] border-[1px] border-[#997E5C] px-2 md:text-[12px] text-[10px]"
+                    >
+                      HOROSCOPE
+                    </button>
+                    <div
+                      class="uppercase text-[#EEEBE680] md:text-[12px] text-[10px] mulish-7"
+                    >
+                      Feb 29, 2024
+                    </div>
+                  </div>
+                  <div
+                    class="md:text-[12px] text-[10px] md:leading-6 leading-4 mulish text-[#EEEBE699] line-clamp-2"
+                  >
+                    Uncover the mysteries of 11th house astrology and learn how
+                    it influences your friendships, social networks, and future
+                    aspirations. Explore your cosmic connections!
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="flex flex-row bg-[#EEEBE608] justify-between items-center"
+            >
+              <div class="">
+                <img
+                  class="md:w-[190px] sm:w-[111px] w-[90px]"
+                  src="assets/images/lp-2.png"
+                  alt=""
+                />
+              </div>
+              <div class="md:w-[360px]">
+                <div
+                  class="flex flex-col gap-2 md:p-6 sm:p-4 p-2 md:w-[360px] sm:w-[270px] w-[220px]"
+                >
+                  <div
+                    class="uppercase forum md:text-xl text-base truncate text-[#EEEBE6]"
+                  >
+                    Unlock Tarot Card Meanings
+                  </div>
+                  <div class="flex gap-4 items-center">
+                    <button
+                      class="mulish-6 hover:text-[#bd9b72] md:text-[12px] text-[10px] hover:border-[#bd9b72] text-[#997E5C] border-[1px] border-[#997E5C] px-2"
+                    >
+                      TAROT
+                    </button>
+                    <div
+                      class="uppercase text-[#EEEBE680] md:text-xs text-[10px] mulish-7"
+                    >
+                      mar 21, 2024
+                    </div>
+                  </div>
+                  <div
+                    class="md:text-[12px] text-[10px] md:leading-6 leading-4 mulish text-[#EEEBE699] line-clamp-2"
+                  >
+                    Discover the secrets of tarot card meanings and find
+                    guidance in your readings. Explore interpretations for love,
+                    career, and personal growth.
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="col-span-6 flex flex-col">
+
+          <div class="col-span-6 flex flex-col justify-between gap-5">
             <div class="uppercase forum text-[24px] text-[#EEEBE6]">
               Other features
             </div>
-            <div></div>
+            <div class="grid grid-cols-12 gap-4 gap-y-6">
+              <div
+                class="col-span-6 flex flex-col items-center justify-center border-[1px] border-[#EEEBE64D] cursor-pointer"
+              >
+                <div class="container-of bg-[#061528] md:block hidden">
+                  <div class="rotating-wrapper">
+                    <img
+                      class="rotating-image"
+                      src="../../../assets/images/of-1.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div class="md:hidden block">
+                  <img
+                    class="md:h-[130px] w-[267px]"
+                    src="../../../assets/images/of-1s.png"
+                    alt=""
+                  />
+                </div>
+                <div
+                  class="flex justify-center uppercase forum md:text-[16px] text-[14px] text-[#EEEBE6] py-3 border-[#EEEBE64D] border-t-[1px] w-full"
+                >
+                  Horoscopes
+                </div>
+              </div>
+              <div
+                class="col-span-6 flex flex-col items-center justify-center border-[1px] border-[#EEEBE64D] cursor-pointer"
+              >
+                <div class="">
+                  <img
+                    class="md:h-[130px] w-[267px]"
+                    src="../../../assets/images/of-2.png"
+                    alt=""
+                  />
+                </div>
+
+                <div
+                  class="flex justify-center uppercase forum md:text-[16px] text-[14px] text-[#EEEBE6] py-3 border-[#EEEBE64D] border-t-[1px] w-full"
+                >
+                  Daily tarot
+                </div>
+              </div>
+              <div
+                class="col-span-6 flex flex-col items-center justify-center border-[1px] border-[#EEEBE64D] cursor-pointer"
+              >
+                <div class="">
+                  <img
+                    class="md:h-[130px] w-[267px]"
+                    src="../../../assets/images/of-3.png"
+                    alt=""
+                  />
+                </div>
+
+                <div
+                  class="flex justify-center uppercase forum md:text-[16px] text-[14px] text-[#EEEBE6] py-3 border-[#EEEBE64D] border-t-[1px] w-full"
+                >
+                  COFFEE CUP
+                </div>
+              </div>
+              <div
+                class="col-span-6 flex flex-col items-center justify-center border-[1px] border-[#EEEBE64D] cursor-pointer"
+              >
+                <div class="">
+                  <img
+                    class="md:h-[130px] w-[267px]"
+                    src="../../../assets/images/of-4.png"
+                    alt=""
+                  />
+                </div>
+
+                <div
+                  class="flex justify-center uppercase forum md:text-[16px] text-[14px] text-[#EEEBE6] py-3 border-[#EEEBE64D] border-t-[1px] w-full"
+                >
+                  LOVE COMPATIBILITY
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
 </div>
+
 <app-footer></app-footer>

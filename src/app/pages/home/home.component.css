@@ -105,8 +105,16 @@
   transition: 0.5s;
 }
 
-.flip:hover {
-  transform: rotateY(180deg);
+.horo-class:hover {
+  .flip {
+    transform: rotateY(180deg);
+  }
+}
+
+.tarot-class:hover {
+  .flip {
+    transform: rotateY(180deg);
+  }
 }
 
 .rotating-layer-1 {
@@ -232,21 +240,22 @@
   }
 }
 
-
 .underline-hover-b {
-    display: inline-block;
-    position: relative;
+  display: inline-block;
+  position: relative;
 }
 
 .underline-hover-b::after {
-    content: '';
-    display: block;
-    width: 0;
-    height: 1px;
-    background: black;
-    transition: width 0.3s ease-in-out;
+  content: "";
+  display: block;
+  width: 0;
+  height: 1px;
+  background: black;
+  transition: width 0.3s ease-in-out;
 }
 
 .underline-hover-b:hover::after {
-    width: 100%;
+  width: 100%;
 }
+
+/* ------------------------------------------------------------------------------------------------------------------ ------------------------------------------------- Ripple Button ----------------------------------------------------- ------------------------------------------------------------------------------------------------------------------- */

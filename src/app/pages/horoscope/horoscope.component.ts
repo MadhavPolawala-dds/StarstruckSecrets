@@ -1,4 +1,10 @@
-import { Component, ElementRef, ViewChild, AfterViewInit } from '@angular/core';
+import {
+  Component,
+  ElementRef,
+  ViewChild,
+  AfterViewInit,
+  HostListener,
+} from '@angular/core';
 import { HeaderComponent } from '../../components/header/header.component';
 import { FooterComponent } from '../../components/footer/footer.component';
 import jsonData from '../../../assets/data/horoscope.json';
@@ -11,6 +17,10 @@ import jsonData from '../../../assets/data/horoscope.json';
   styleUrl: './horoscope.component.css',
 })
 export class HoroscopeComponent {
+  timingOptions = ['Yesterday', 'Today', 'Tomorrow', 'Weekly', 'Monthly', 'Yearly'];
+  selectedOption = 'Select Option';
+  isDropdownOpen = false;
+
   selectedItemId: number | null = null;
 
   horoscopes: any = jsonData.horoscope;
