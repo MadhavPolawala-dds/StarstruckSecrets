@@ -1,0 +1,48 @@
+.flip {
+  transition: 0.5s;
+}
+
+.horo-class:hover {
+  .flip {
+    transform: rotateY(180deg);
+  }
+}
+
+.scroll-thumb::-webkit-scrollbar {
+  display: none;
+}
+
+.scroll-thumb {
+  overflow-x: auto; /* Ensure horizontal scrolling is enabled */
+  white-space: nowrap; /* Prevent wrapping of content */
+  scroll-behavior: smooth;
+}
+
+.ripple-button {
+  position: relative;
+
+  overflow: hidden;
+
+  transition: background-color 0.3s;
+  outline: none; /* Remove outline on focus */
+}
+
+.ripple-button::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.11);
+  width: 100px;
+  height: 100px;
+  transform: scale(0);
+  transition: transform 0.01s, opacity 1s;
+  pointer-events: none;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(0);
+}
+
+.ripple-button:active::after {
+  transform: translate(-50%, -50%) scale(10);
+  opacity: 0;
+}

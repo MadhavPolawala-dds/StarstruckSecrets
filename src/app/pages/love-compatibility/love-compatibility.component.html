@@ -1,0 +1,163 @@
+<div class="bg-[#151719] flex justify-center w-full">
+  <div class="flex flex-col justify-center items-center md:w-[1440px] w-full">
+    <app-header style="width: 100%"></app-header>
+    <div class="flex flex-col justify-center items-center w-full">
+      <div
+        class="py-16 flex flex-col items-center gap-5 max-w-[552px] w-full px-2"
+      >
+        <div class="uppercase md:text-[48px] text-[32px] forum text-[#EEEBE6]">
+          Love Compatibility
+        </div>
+        <div class="text-[#EEEBE6] mulish text-[12px] leading-7 text-center">
+          A meeting of the minds is your highest value in love. For you, a
+          stimulating and interesting debate is the best aphrodisiac, as you
+          appreciate intelligence and wit above just about anything else. Find
+          out if your relationship will go all the way...
+        </div>
+      </div>
+      <div
+        class="flex flex-col items-center w-full border-y-[1px] border-y-[#997E5C80]"
+      >
+        <div
+          class="forum w-full border-b-[1px] border-b-[#997E5C80] uppercase text-[20px] py-3 text-center text-[#997E5C]"
+        >
+          select your sign
+        </div>
+        <div
+          class="w-full border-b-[1px] border-b-[#997E5C80] flex justify-center"
+        >
+          <button
+            (click)="scrollLeft()"
+            class="ripple-button hover:bg-[#ffffff0e] md:block hidden border-s-[1px] border-s-[#997E5C80]"
+          >
+            <div
+              class="flex h-full justify-center items-center px-5 border-r-[1px] border-r-[#EEEBE633]"
+            >
+              <img class="h-6 w-6" src="assets/logo/vector-left.png" alt="" />
+            </div>
+          </button>
+          <div
+            #scrollContainer
+            class="px-5 overflow-y-auto scroll-thumb lg:max-w-[850px] md:max-w-[620px] sm:max-w-full flex items-center"
+          >
+            <div class="flex flex-row">
+              @for( item of horoscopes ; track item.id ){
+              <div
+                [style.backgroundColor]="
+                  selectedItemId === item.id ? '#997E5C' : ''
+                "
+                (click)="selectItem(item.id)"
+                class="lg:col-span-3 md:col-span-4 col-span-6 m-2 my-3 hover:cursor-pointer"
+              >
+                <div
+                  class="bg-[#997e5c0e] horo flex flex-col justify-center items-center p-3 md:p-4 border-[1px] border-[#997e5c56] h-auto md:w-[168px] w-[194px]"
+                >
+                  <div class="horo-class">
+                    <img
+                      class="md:h-[58px] h-[67px] w-auto hover:cursor-pointer flip"
+                      src="{{ item.image }}"
+                      alt=""
+                    />
+                  </div>
+                  <div
+                    class="text-[#997E5C] pt-2 forum text-[16px] flex items-center"
+                    [style.color]="selectedItemId === item.id ? '#EEEBE6' : ''"
+                  >
+                    {{ item.name.toUpperCase() }}
+                  </div>
+                </div>
+              </div>
+              }
+            </div>
+          </div>
+          <button
+            (click)="scrollRight()"
+            class="ripple-button hover:bg-[#ffffff0e] md:block hidden border-e-[1px] border-e-[#997E5C80]"
+          >
+            <div
+              class="flex h-full justify-center items-center px-5 border-l-[1px] border-l-[#EEEBE633]"
+            >
+              <img class="h-6 w-6" src="assets/logo/vector-right.png" alt="" />
+            </div>
+          </button>
+        </div>
+        <div
+          class="forum w-full uppercase text-[20px] py-3 text-center border-b-[1px] border-b-[#997E5C80] text-[#997E5C]"
+        >
+          select your partner’s sign
+        </div>
+        <div
+          class="w-full border-b-[1px] border-b-[#997E5C80] flex justify-center"
+        >
+          <button
+            (click)="scrollLeft2()"
+            class="ripple-button hover:bg-[#ffffff0e] md:block hidden border-s-[1px] border-s-[#997E5C80]"
+          >
+            <div
+              class="flex h-full justify-center items-center px-5 border-r-[1px] border-r-[#EEEBE633]"
+            >
+              <img class="h-6 w-6" src="assets/logo/vector-left.png" alt="" />
+            </div>
+          </button>
+          <div
+            #scrollContainer2
+            class="px-5 overflow-y-auto scroll-thumb lg:max-w-[850px] md:max-w-[620px] sm:max-w-full flex items-center"
+          >
+            <div class="flex flex-row">
+              @for( item2 of horoscopes2 ; track item2.id ){
+              <div
+                [style.backgroundColor]="
+                  selectedItem2Id === item2.id ? '#997E5C' : ''
+                "
+                (click)="selectItem2(item2.id)"
+                class="lg:col-span-3 md:col-span-4 col-span-6 m-2 my-3 hover:cursor-pointer"
+              >
+                <div
+                  class="bg-[#997e5c0e] horo flex flex-col justify-center items-center p-3 md:p-4 border-[1px] border-[#997e5c56] h-auto md:w-[168px] w-[194px]"
+                >
+                  <div class="horo-class">
+                    <img
+                      class="md:h-[58px] h-[67px] w-auto hover:cursor-pointer flip"
+                      src="{{ item2.image }}"
+                      alt=""
+                    />
+                  </div>
+                  <div
+                    class="text-[#997E5C] pt-2 forum text-[16px] flex items-center"
+                    [style.color]="
+                      selectedItem2Id === item2.id ? '#EEEBE6' : ''
+                    "
+                  >
+                    {{ item2.name.toUpperCase() }}
+                  </div>
+                </div>
+              </div>
+              }
+            </div>
+          </div>
+          <button
+            (click)="scrollRight2()"
+            class="ripple-button hover:bg-[#ffffff0e] md:block hidden border-e-[1px] border-e-[#997E5C80]"
+          >
+            <div
+              class="flex h-full justify-center items-center px-5 border-l-[1px] border-l-[#EEEBE633]"
+            >
+              <img class="h-6 w-6" src="assets/logo/vector-right.png" alt="" />
+            </div>
+          </button>
+        </div>
+        <div
+          class="py-4 text-center w-full border-b-[1px] border-b-[#997E5C80]"
+        >
+          <button
+            class="uppercase text-white mulish-7 text-[12px] px-5 py-4 bg-[#997E5C] hover:bg-[#997e5cc7]"
+          >
+            CHECK COMPATIBILITY
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<app-more></app-more>
+<app-footer></app-footer>

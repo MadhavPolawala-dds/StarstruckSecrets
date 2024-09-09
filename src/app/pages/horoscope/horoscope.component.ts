@@ -17,7 +17,14 @@ import jsonData from '../../../assets/data/horoscope.json';
   styleUrl: './horoscope.component.css',
 })
 export class HoroscopeComponent {
-  timingOptions = ['Yesterday', 'Today', 'Tomorrow', 'Weekly', 'Monthly', 'Yearly'];
+  timingOptions = [
+    'Yesterday',
+    'Today',
+    'Tomorrow',
+    'Weekly',
+    'Monthly',
+    'Yearly',
+  ];
   selectedOption = 'Select Option';
   isDropdownOpen = false;
 
