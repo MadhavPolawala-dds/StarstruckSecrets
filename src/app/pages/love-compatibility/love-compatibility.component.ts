@@ -4,11 +4,12 @@ import { MoreComponent } from '../../components/more/more.component';
 import { FooterComponent } from '../../components/footer/footer.component';
 import { HoroscopeComponent } from '../horoscope/horoscope.component';
 import jsonData from '../../../assets/data/horoscope.json';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-love-compatibility',
   standalone: true,
-  imports: [HeaderComponent, MoreComponent, FooterComponent],
+  imports: [HeaderComponent, MoreComponent, FooterComponent, RouterLink],
   templateUrl: './love-compatibility.component.html',
   styleUrl: './love-compatibility.component.css',
 })

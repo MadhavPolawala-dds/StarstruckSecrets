@@ -1,0 +1,134 @@
+{
+  "blog": [
+    {
+      "id": 1,
+      "title": "Discover the Secrets of 11th House Astrology",
+      "image": "../../../assets/images/blog/blog1.png",
+      "button": "horoscope",
+      "date": "Feb 29, 2024",
+      "description": "Uncover the mysteries of 11th house astrology and learn how it influences your friendships, social networks, and future aspirations. Explore your cosmic connections!"
+    },
+    {
+      "id": 2,
+      "title": "Unlock Tarot Card Meanings",
+      "image": "../../../assets/images/blog/blog2.png",
+      "button": "tarot",
+      "date": "mar 21, 2024",
+      "description": "Discover the secrets of tarot card meanings and find guidance in your readings. Explore interpretations for love, career, and personal growth."
+    },
+
+    {
+      "id": 3,
+      "title": "Yes or No Tarot: Quick Insightful Answers",
+      "image": "assets/images/blog/blog3.png",
+      "button": "tarot",
+      "date": "apr 30, 2024",
+      "description": "Seek immediate clarity with a yes or no tarot reading. Find answers to your pressing questions with quick, accurate tarot insights."
+    },
+    {
+      "id": 4,
+      "title": "Angel Numbers: Spiritual Guidance in Everyday Life",
+      "image": "assets/images/blog/blog4.png",
+      "button": "Angel Numbers",
+      "date": "jUL 26, 2024",
+      "description": "Discover the power of angel numbers in your daily life. Learn how these spiritual messages can guide you, bring clarity, and help you navigate life's journey."
+    },
+
+    {
+      "id": 5,
+      "title": "Cancer Horoscope: Your Daily Celestial Guidance",
+      "image": "assets/images/blog/blog5.png",
+      "button": "horoscope",
+      "date": "jul 1, 2024",
+      "description": "Discover your daily Cancer horoscope for love, career, and wellness. Get celestial insights tailored to your zodiac sign and navigate life's challenges with confidence."
+    },
+    {
+      "id": 6,
+      "title": "Scorpio Horoscope: Unlock Your Cosmic Destiny",
+      "image": "assets/images/blog/blog6.png",
+      "button": "horoscope",
+      "date": "jun 26, 2024",
+      "description": "Discover your cosmic destiny with our Scorpio horoscope. Uncover insights on love, career, and personal growth tailored for the passionate Scorpio sign."
+    },
+    {
+      "id": 7,
+      "title": "Unlock Insights with Free Tarot Card Reading",
+      "image": "assets/images/blog/blog7.png",
+      "button": "Tarot",
+      "date": "jun 21, 2024",
+      "description": "Explore your path forward with a free tarot card reading. Gain clarity and guidance on life's questions without spending a dime. Start your journey now!"
+    },
+    {
+      "id": 8,
+      "title": "Beginner's Guide to Reading Tarot Cards",
+      "image": "assets/images/blog/blog8.png",
+      "button": "tarot",
+      "date": "jun 21, 2024",
+      "description": "Unlock the secrets of the tarot with our easy guide on how to read tarot cards – perfect for beginners eager to explore this mystical art."
+    },
+    {
+      "id": 9,
+      "title": "June horoscope",
+      "image": "assets/images/blog/blog9.png",
+      "button": "horoscope",
+      "date": "jun 21, 2024",
+      "description": "June Horoscope Insights for Stellar Guidance"
+    },
+    {
+      "id": 10,
+      "title": "Daily Monkey Horoscope: Your Astro Insight",
+      "image": "assets/images/blog/blog10.png",
+      "button": "horoscope",
+      "date": "jun 26, 2024",
+      "description": "Unlock your inner primate potential with the Daily Monkey Horoscope! Discover astrological insights tailored for the simian soul within you."
+    },
+    {
+      "id": 11,
+      "title": "Eugenia Last Horoscopes",
+      "image": "assets/images/blog/blog11.png",
+      "button": "horoscope",
+      "date": "jun 21, 2024",
+      "description": "Discovering the Stars with Eugenia Last: A Guide to Navigating Your Daily Horoscope"
+    },
+    {
+      "id": 12,
+      "title": "2024 Horoscope",
+      "image": "assets/images/blog/blog12.png",
+      "button": "horoscope",
+      "date": "jun 21, 2024",
+      "description": "2024 Horoscope: Unveiling the Cosmic Predictions for Every Zodiac Sign"
+    },
+    {
+      "id": 13,
+      "title": "Christopher Renstrom Horoscope",
+      "image": "assets/images/blog/blog13.png",
+      "button": "horoscope",
+      "date": "jul 1, 2024",
+      "description": "Explore the cosmic insights of Christopher Renstrom's horoscopes - your guide to personal growth, daily challenges, and the stars' influence on our lives."
+    },
+    {
+      "id": 14,
+      "title": "Horoscopes for Personal Growth",
+      "image": "assets/images/blog/blog14.png",
+      "button": "horoscope",
+      "date": "jun 26, 2024",
+      "description": "Unlocking Your Potential: How Astrology Can Be Your Guide to Personal Growth."
+    },
+    {
+      "id": 15,
+      "title": "Astrology and Relationships",
+      "image": "assets/images/blog/blog15.png",
+      "button": "horoscope",
+      "date": "jun 21, 2024",
+      "description": "Unlocking the Mysteries of Love: How Astrology Can Guide Your Relationships."
+    },
+    {
+      "id": 16,
+      "title": "New Moon and Full Moon Rituals",
+      "image": "assets/images/blog/blog16.png",
+      "button": "horoscope",
+      "date": "jun 21, 2024",
+      "description": "Ideas for rituals or practices to undertake during new moons and full moons, including how these lunar phases can affect different zodiac signs."
+    }
+  ]
+}

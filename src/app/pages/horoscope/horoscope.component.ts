@@ -8,11 +8,12 @@ import {
 import { HeaderComponent } from '../../components/header/header.component';
 import { FooterComponent } from '../../components/footer/footer.component';
 import jsonData from '../../../assets/data/horoscope.json';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-horoscope',
   standalone: true,
-  imports: [HeaderComponent, FooterComponent],
+  imports: [HeaderComponent, FooterComponent, RouterLink],
   templateUrl: './horoscope.component.html',
   styleUrl: './horoscope.component.css',
 })

@@ -10,6 +10,7 @@ import { FortuneCookieComponent } from './pages/fortune-cookie/fortune-cookie.co
 import { FortuneCookieAnswerComponent } from './pages/fortune-cookie-answer/fortune-cookie-answer.component';
 import { LoveCompatibilityComponent } from './pages/love-compatibility/love-compatibility.component';
 import { ReportComponent } from './pages/report/report.component';
+import { BlogComponent } from './pages/blog/blog.component';
 
 export const routes: Routes = [
   {
@@ -52,5 +53,9 @@ export const routes: Routes = [
   {
     path: 'report',
     component: ReportComponent,
+  },
+  {
+    path: 'blog',
+    component: BlogComponent,
   },
 ];

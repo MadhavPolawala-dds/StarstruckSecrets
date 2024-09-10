@@ -1,12 +1,11 @@
 import { Component } from '@angular/core';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-more',
   standalone: true,
-  imports: [],
+  imports: [RouterLink],
   templateUrl: './more.component.html',
-  styleUrl: './more.component.css'
+  styleUrl: './more.component.css',
 })
-export class MoreComponent {
-
-}
+export class MoreComponent {}
