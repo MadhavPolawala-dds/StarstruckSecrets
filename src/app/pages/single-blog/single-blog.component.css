@@ -1,0 +1,16 @@
+.middle-cont {
+  border-right: 1px solid #15171933 !important;
+}
+
+.scroll-btn {
+  background-color: #15171993;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.scroll-btn:hover {
+  background-color: #151719cb;
+}

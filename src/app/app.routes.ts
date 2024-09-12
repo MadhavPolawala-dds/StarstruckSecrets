@@ -1,4 +1,5 @@
-import { Routes } from '@angular/router';
+import { NgModule } from '@angular/core';
+import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './pages/home/home.component';
 import { HoroscopeComponent } from './pages/horoscope/horoscope.component';
 import { MoreComponent } from './components/more/more.component';
@@ -11,8 +12,10 @@ import { FortuneCookieAnswerComponent } from './pages/fortune-cookie-answer/fort
 import { LoveCompatibilityComponent } from './pages/love-compatibility/love-compatibility.component';
 import { ReportComponent } from './pages/report/report.component';
 import { BlogComponent } from './pages/blog/blog.component';
+import { SingleBlogComponent } from './pages/single-blog/single-blog.component';
 
 export const routes: Routes = [
+  { path: 'single-blog/:id', component: SingleBlogComponent },
   {
     path: '',
     component: HomeComponent,
@@ -58,4 +61,14 @@ export const routes: Routes = [
     path: 'blog',
     component: BlogComponent,
   },
+  { path: 'blog/:id', component: SingleBlogComponent },
+  {
+    path: 'single-blog/:id',
+    component: SingleBlogComponent,
+  },
 ];
+@NgModule({
+  imports: [RouterModule.forRoot(routes, { onSameUrlNavigation: 'reload' })],
+  exports: [RouterModule],
+})
+export class AppRoutingModule {}

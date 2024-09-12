@@ -15,14 +15,17 @@
       >
         <div>
           <input
-            class="border-[1px] border-[#15171933] bg-[#EEEBE6] h-[58px] lg:w-[414px] md:w-[376px] sm:w-[334px] ps-6 text-[#151719] placeholder-[#1517194b] text-[14px]"
+            [(ngModel)]="searchTerm"
+            (keyup)="onSearch()"
+            class="border-[1px] border-[#15171933] bg-[#EEEBE6] h-[58px] lg:w-[414px] md:w-[376px] sm:w-[334px] ps-6 text-[#151719] placeholder-[#1517194b] text-[14px] hover:border-[#151719]"
             type="text"
             placeholder="SEARCH FOR ARTICLES"
           />
         </div>
         <div>
           <button
-            class="uppercase mulish font-extrabold text-[14px] bg-[#151719] text-white h-[58px] w-[96px]"
+            (click)="onSearch()"
+            class="uppercase mulish font-extrabold text-[14px] hover:bg-[#232629] bg-[#151719] text-white h-[58px] w-[96px]"
           >
             Search
           </button>
@@ -31,8 +34,11 @@
       <div
         class="w-fit grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 xl:px-36 lg:px-24 md:px-16 mx-8 gap-6 py-14"
       >
-        @for (item of blog; track $index) {
-        <div class="flex md:flex-col flex-row bg-white">
+        @for (item of filteredBlogs; track $index) {
+        <div
+          [routerLink]="['/single-blog', item.id]"
+          class="flex md:flex-col flex-row bg-white cursor-pointer transition duration-300 ease-in-out hover:scale-105"
+        >
           <div class="md:w-full sm:w-4/12 w-5/12 flex items-center">
             <img class="md:max-w" src="{{ item.image }}" alt="" />
           </div>
