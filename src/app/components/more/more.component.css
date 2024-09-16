@@ -36,3 +36,16 @@
 .container-of:hover .rotating-image {
   animation: rotate 10s linear infinite;
 }
+
+/* Media query for screen size smaller than 1440px and larger than 1024px */
+
+@media screen and (max-width: 1279px) and (min-width: 1024px) {
+  .rotating-image {
+    width: 200px;
+    height: 200px;
+  }
+  .container-of {
+    width: 200px;
+    height: 100px;
+  }
+}
